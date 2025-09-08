@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In form</title>
+  <link rel="stylesheet" href="./css/output.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+</head>
+<body class="relative bg-cover bg-center min-h-screen" 
+      style="background-image: url('./images/register_form.jpg');">
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Header -->
+  <header class="absolute top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-white">
+      
+      <!-- Logo -->
+      <a href="#" class="text-2xl font-bold tracking-wide">🌏 ASEAN</a>
+
+      <!-- Nav Links (Desktop) -->
+      <nav class="hidden md:flex space-x-8 font-medium mx-auto">
+        <a href="#" class="hover:text-amber-300 transition">Home</a>
+        <a href="#" class="hover:text-amber-300 transition">News</a>
+        <a href="#" class="hover:text-amber-300 transition">Buyer Guide</a>
+        <a href="#" class="hover:text-amber-300 transition">Journals</a>
+        <a href="./aboutus.html" class="hover:text-amber-300 transition">About Us</a>
+        <a href="./contact.html" class="hover:text-amber-300 transition">Contact Us</a>
+      </nav>
+
+      <!-- Search (Desktop) -->
+      <div class="hidden md:flex items-center">
+  <div class="relative w-64">
+    <input type="text" placeholder="Search..."
+           class="w-full pl-4 pr-10 py-2 rounded-full bg-gray-100 text-gray-800 
+                  focus:outline-none focus:ring-2 focus:ring-blue-300 border-0" />
+    <button class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-500">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </div>
+</div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden bg-white/20 backdrop-blur-lg text-white">
+      <nav class="flex flex-col space-y-4 p-6 font-medium">
+        <a href="#" class="hover:text-green-400 transition">Home</a>
+        <a href="#" class="hover:text-green-400 transition">News</a>
+        <a href="#" class="hover:text-green-400 transition">Buyer Guide</a>
+        <a href="#" class="hover:text-green-400 transition">Journals</a>
+        <a href="./aboutus.html" class="hover:text-green-400 transition">About us</a>
+        <a href="./contact.html" class="hover:text-green-400 transition">Contact</a>
+        <a href="./register.html" class="hover:text-green-400 transition">Sign in</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content (Sign-in Form) -->
+  <main class="relative z-10 flex items-center justify-center min-h-screen">
+    <div class="bg-white w-full max-w-md shadow-xl rounded-xl p-8">
+      <!-- Logo --> 
+      <div class="flex justify-center mb-6">
+        <h1 class="font-bold text-green-400 text-3xl">SEA Agriculture</h1>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="text-2xl font-semibold text-blue-600 text-center mb-2">
+        Sign in
+      </h1>
+
+      <!-- Form -->
+      <form id="register_form" method="post">   
+        <div class="mb-4">
+          <input 
+            type="email" 
+            placeholder="Email address" 
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+            required
+          />
+        </div>
+
+        <button 
+          type="submit" 
+          class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition">
+          Next
+        </button>
+      </form>
+
+      <!-- Divider -->
+      <div class="flex items-center my-6">
+        <hr class="flex-grow border-gray-300" />
+        <span class="px-2 text-sm text-gray-500">or</span>
+        <hr class="flex-grow border-gray-300" />
+      </div>
+
+      <!-- Google Sign In -->
+      <button class="w-full flex items-center justify-center gap-2 border border-gray-300 py-3 rounded-lg hover:bg-gray-100 transition">
+        <img src="https://www.svgrepo.com/show/355037/google.svg" class="h-5 w-5" alt="Google Logo"/>
+        <span class="font-medium">Sign in with Google</span>
+      </button>
+
+      <!-- Create Account -->
+      <div class="mt-6 text-center">
+        <p class="text-sm text-gray-600">
+          Don’t have an account?
+        </p>
+        <a href="#" class="inline-block mt-2 w-full bg-green-500 text-white py-3 rounded-lg font-medium hover:bg-green-600 transition">
+          Create Account
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Toggle Script -->
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

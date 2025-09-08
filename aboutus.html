@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Silver Sea Media</title>
+  <link rel="stylesheet" href="./css/output.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-white">
+      
+      <!-- Logo -->
+      <a href="#" class="text-2xl font-bold tracking-wide">🌏 ASEAN</a>
+
+      <!-- Nav Links (Desktop) -->
+      <nav class="hidden md:flex space-x-8 font-medium mx-auto">
+        <a href="#" class="hover:text-amber-300 transition">Home</a>
+        <a href="#" class="hover:text-amber-300 transition">News</a>
+        <a href="#" class="hover:text-amber-300 transition">Buyer Guide</a>
+        <a href="#" class="hover:text-amber-300 transition">Journals</a>
+        <a href="./aboutus.html" class="hover:text-amber-300 transition">About Us</a>
+        <a href="./contact.html" class="hover:text-amber-300 transition">Contact Us</a>
+      </nav>
+
+      <!-- Search (Desktop) -->
+      <div class="hidden md:flex items-center">
+  <div class="relative w-64">
+    <input type="text" placeholder="Search..."
+           class="w-full pl-4 pr-10 py-2 rounded-full bg-gray-100 text-gray-800 
+                  focus:outline-none focus:ring-2 focus:ring-blue-300 border-0" />
+    <button class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-500">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </div>
+</div>
+
+<!-- Sign in -->
+      <div class="hidden md:flex items-center ml-2 space-x-2">
+        <a href="./register.html">
+          <button class="px-3 py-1 bg-blue-400 text-gray-900 rounded-lg hover:bg-blue-500 transition">
+          Sign in
+        </button>
+        </a>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden bg-white/20 backdrop-blur-lg text-white">
+      <nav class="flex flex-col space-y-4 p-6 font-medium">
+        <a href="#" class="hover:text-green-400 transition">Home</a>
+        <a href="#" class="hover:text-green-400 transition">News</a>
+        <a href="#" class="hover:text-green-400 transition">Buyer Guide</a>
+        <a href="#" class="hover:text-green-400 transition">Journals</a>
+        <a href="./aboutus.html" class="hover:text-green-400 transition">About us</a>
+        <a href="./contact.html" class="hover:text-green-400 transition">Contact</a>
+        <a href="./register.html" class="hover:text-green-400 transition">Sign in</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-[400px]" style="background-image: url('./images/aboutus_bg.jpg');">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 flex items-center justify-center h-full">
+      <h1 class="text-4xl md:text-5xl font-bold text-white text-center">About Us</h1>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-semibold text-blue-800 mb-4">Silver Sea Media – Silver Sea International Ltd.</h2>
+    <p class="text-lg text-gray-700 mb-6 italic">“To guide & To connect”</p>
+    <p class="text-gray-700 leading-relaxed">
+      Silver Sea Media is a private SME business supporting the market information and technology to the farmers of Myanmar especially in Livestock and Aquaculture.  
+      We share knowledge and information by publications and on social media.
+    </p>
+  </section>
+
+  <!-- Publications -->
+  <section class="bg-white py-12">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h3 class="text-2xl font-semibold text-blue-700 mb-4">Our Publications</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Silver Sea Media is the publisher of <b>Silver Sea Journal</b> (Myanmar Livestock, Fishery and Agriculture Journal). The first publication was on <b>7th December 2005</b>. It is the only livestock and fishery oriented regular publication in Myanmar, published monthly with 3000 copies.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          We also publish the <b>Myanmar Livestock and Fishery Directory</b> annually since 2007. This publication is widely used in the livestock and fishery sector for finding suppliers and local shops easily.
+        </p>
+      </div>
+      <div>
+        <img src="./images/aboutus_1.jpg" 
+             alt="Publications" 
+             class="rounded-2xl shadow-lg"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media -->
+  <section class="py-12 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <img src="./images/aboutus_2.jpg" 
+             alt="Social Media" 
+             class="rounded-2xl shadow-lg"/>
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold text-blue-700 mb-4">Social Media</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          The digital version of our monthly publication can be read on our <b>Facebook Page – Silver Sea Journal</b>.  
+          We also share daily livestock prices and both local and international news.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          The page has over <b>50,000 followers</b> and serves as an essential information hub for farmers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="bg-white py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-semibold text-blue-700 mb-4">Achievements</h3>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Silver Sea Media also organizes seminars and forums with the Myanmar Livestock Federation and Myanmar Fishery Federation.  
+        During the Covid-19 pandemic, we successfully organized the <b>Myanmar Poultry Conference in December 2020</b>.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        Due to our strong efforts for the development of livestock and fishery farmers, we received the <b>FAO Award in 2008</b>, jointly given by the Ministry of Agriculture, Livestock and Irrigation of Myanmar and FAO.
+      </p>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="py-12 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-2xl font-semibold text-blue-700 mb-4">Who We Are</h3>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Silver Sea Media is run by <b>Zar Ni</b>, <b>Pyone Pyone Aung</b>, and <b>Chaw Su</b> with the support of our hardworking team of 11 staff.
+      </p>
+      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=80" 
+           alt="Our Team" 
+           class="mx-auto rounded-2xl shadow-lg max-h-[400px] object-cover"/>
+    </div>
+  </section>
+
+  <!-- Future Goals -->
+  <section class="bg-white py-12">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-2xl font-semibold text-blue-700 mb-4">Our Future Goal</h3>
+      <p class="text-gray-700 leading-relaxed">
+        By using information technology, Silver Sea Media will continue to share knowledge with care for our beloved farmers who produce protein.  
+        We aim to serve as a <b>platform for Southeast Asia’s agriculture-related business</b>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 mt-12">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p>&copy; 2025 Silver Sea Media. All rights reserved.</p>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-amber-300">Facebook</a>
+        <a href="#" class="hover:text-amber-300">Twitter</a>
+        <a href="#" class="hover:text-amber-300">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

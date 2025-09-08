@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 <body class="h-screen w-screen 
              bg-gradient-to-br from-green-100 via-white to-green-200 min-h-screen">
@@ -14,24 +15,140 @@
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       
       <!-- Logo -->
-      <a href="#" class="text-2xl font-bold tracking-wide">🌏 ASEAN</a>
+      <a href="#home" class="text-2xl font-bold tracking-wide">🌏 ASEAN</a>
 
       <!-- Nav Links (Desktop) -->
       <nav class="hidden md:flex space-x-8 font-medium mx-auto">
         <a href="#" class="hover:text-amber-300 transition">Home</a>
-        <a href="#" class="hover:text-amber-300 transition">News</a>
-        <a href="#" class="hover:text-amber-300 transition">Buyer Guide</a>
-        <a href="#" class="hover:text-amber-300 transition">Journals</a>
-        <a href="#" class="hover:text-amber-300 transition">About Us</a>
-        <a href="#" class="hover:text-amber-300 transition">Contact Us</a>
+        
+        <!-- News Dropdown (Hover) -->
+<div class="relative group">
+  <!-- Main Link -->
+  <a href="#" 
+     class="hover:text-amber-300 transition flex items-center space-x-1">
+    <span>News</span>
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </a>
+
+  <!-- Dropdown Choices -->
+  <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-hover:block absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-50">
+    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Agriculture News</a>
+    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Live Stock News</a>
+    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Fishery News</a>
+  </div>
+</div>
+
+
+<!-- Buyer Guide Dropdown (Hover with Submenu) -->
+<div class="relative group">
+  <!-- Main Link -->
+  <a href="#"
+     class="hover:text-amber-300 transition flex items-center space-x-1">
+    <span>Buyer Guide</span>
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </a>
+
+  <!-- Dropdown Level 1 -->
+  <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-50 transition-opacity duration-300 ease-in-out">
+    
+    <!-- Guide 1 -->
+    <div class="relative group/item">
+      <a href="#"
+         class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-amber-100 transition">
+        Agriculture
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+
+      <!-- Dropdown Level 2 -->
+      <div class="invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 absolute top-0 left-full ml-1 w-48 bg-white shadow-lg rounded-lg py-2 z-50 transition-opacity duration-300 ease-in-out">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Agriculture Machinery and Implement</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Agro Chemical</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Agro Base Industry Machinery</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Farm Equipments and Green Houses</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Fertilizer</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Irrigation System</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Seeds and Nursery</a>
+      </div>
+    </div>
+
+    <!-- Guide 2 (with submenu) -->
+    <div class="relative group/item">
+      <a href="#"
+         class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-amber-100 transition">
+        Live Stock
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+
+      <!-- Dropdown Level 2 -->
+      <div class="hidden group-hover/item:block absolute top-0 left-full ml-1 w-48 bg-white shadow-lg rounded-lg py-2 z-50 transition-opacity duration-300 ease-in-out">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Animal Health Products</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">DOC,Piglets Producers</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Farm Equipment</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Feed Mill Machinery and Storage</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Feed Producers</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Processing Plants and Equipments</a>
+      </div>
+    </div>
+
+   <!-- Guide 3 (with submenu) -->
+    <div class="relative group/item">
+      <a href="#"
+         class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-amber-100 transition">
+        Fishery
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+
+      <!-- Dropdown Level 2 -->
+      <div class="hidden group-hover/item:block absolute top-0 left-full ml-1 w-48 bg-white shadow-lg rounded-lg py-2 z-50 transition-opacity duration-300 ease-in-out">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Aqua Feed Producers</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Hatcheries and Seeds</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Fishing Vessels and Accessories</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Fishing Gear</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Processing Plant and Cold Store Machinery</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <a href="#" onclick="checkAuth(event)" class="hover:text-amber-300 transition">Journals</a>
+        <a href="./aboutus.html" class="hover:text-amber-300 transition">About Us</a>
+        <a href="./contact.html" class="hover:text-amber-300 transition">Contact Us</a>
       </nav>
 
-      <div class="hidden md:flex items-center space-x-2">
-        <input type="text" placeholder="Search..."
-               class="px-3 py-1 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300"/>
-        <button class="px-3 py-1 bg-blue-400 text-gray-900 rounded-lg hover:bg-blue-500 transition">
-          Search
+      <div class="hidden md:flex items-center">
+  <div class="relative w-64">
+    <input type="text" placeholder="Search..."
+           class="w-full pl-4 pr-10 py-2 rounded-full bg-gray-100 text-gray-800 
+                  focus:outline-none focus:ring-2 focus:ring-blue-300 border-0" />
+    <button class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-blue-500">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </div>
+</div>
+
+      <!-- Sign in -->
+      <div class="hidden md:flex items-center ml-2 space-x-2">
+        <a href="./register.html">
+          <button class="px-3 py-1 bg-blue-400 text-gray-900 rounded-lg hover:bg-blue-500 transition">
+          Sign in
         </button>
+        </a>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -47,17 +164,123 @@
     <!-- Mobile Menu -->
     <div id="menu" class="hidden md:hidden bg-white/20 backdrop-blur-lg">
       <nav class="flex flex-col space-y-4 p-6 font-medium">
-        <a href="#" class="hover:text-green-400 transition">Home</a>
-        <a href="#" class="hover:text-green-400 transition">Culture</a>
-        <a href="#" class="hover:text-green-400 transition">Traditions</a>
-        <a href="#" class="hover:text-green-400 transition">Gallery</a>
-        <a href="#" class="hover:text-green-400 transition">Contact</a>
+        <a href="#" class="hover:text-amber-300 transition">Home</a>
+        
+        <!-- News Dropdown (Hover) -->
+<div class="relative group">
+  <!-- Main Link -->
+  <a href="#" 
+     class="hover:text-amber-300 transition flex items-center space-x-1">
+    <span>News</span>
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </a>
+
+  <!-- Dropdown Choices -->
+  <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-hover:block absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-50">
+    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Agriculture News</a>
+    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Live Stock News</a>
+    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Fishery News</a>
+  </div>
+</div>
+
+
+<!-- Buyer Guide Dropdown (Hover with Submenu) -->
+<div class="relative group">
+  <!-- Main Link -->
+  <a href="#"
+     class="hover:text-amber-300 transition flex items-center space-x-1">
+    <span>Buyer Guide</span>
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </a>
+
+  <!-- Dropdown Level 1 -->
+  <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-50 transition-opacity duration-300 ease-in-out">
+    
+    <!-- Guide 1 -->
+    <div class="relative group/item">
+      <a href="#"
+         class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-amber-100 transition">
+        Agriculture
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+
+      <!-- Dropdown Level 2 -->
+      <div class="invisible opacity-0 group-hover/item:visible group-hover/item:opacity-100 absolute top-0 left-full ml-1 w-48 bg-white shadow-lg rounded-lg py-2 z-50 transition-opacity duration-300 ease-in-out">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Agriculture Machinery and Implement</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Agro Chemical</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Agro Base Industry Machinery</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Farm Equipments and Green Houses</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Fertilizer</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Irrigation System</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Seeds and Nursery</a>
+      </div>
+    </div>
+
+    <!-- Guide 2 (with submenu) -->
+    <div class="relative group/item">
+      <a href="#"
+         class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-amber-100 transition">
+        Live Stock
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+
+      <!-- Dropdown Level 2 -->
+      <div class="hidden group-hover/item:block absolute top-0 left-full ml-1 w-48 bg-white shadow-lg rounded-lg py-2 z-50 transition-opacity duration-300 ease-in-out">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Animal Health Products</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">DOC,Piglets Producers</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Farm Equipment</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Feed Mill Machinery and Storage</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Feed Producers</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Processing Plants and Equipments</a>
+      </div>
+    </div>
+
+   <!-- Guide 3 (with submenu) -->
+    <div class="relative group/item">
+      <a href="#"
+         class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-amber-100 transition">
+        Fishery
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+
+      <!-- Dropdown Level 2 -->
+      <div class="hidden group-hover/item:block absolute top-0 left-full ml-1 w-48 bg-white shadow-lg rounded-lg py-2 z-50 transition-opacity duration-300 ease-in-out">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Aqua Feed Producers</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Hatcheries and Seeds</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Fishing Vessels and Accessories</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Fishing Gear</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-amber-100 transition">Processing Plant and Cold Store Machinery</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <a href="#" onclick="checkAuth(event)" class="hover:text-amber-300 transition">Journals</a>
+        <a href="./aboutus.html" class="hover:text-amber-300 transition">About Us</a>
+        <a href="./contact.html" class="hover:text-amber-300 transition">Contact Us</a>
+        <a href="./register.html" class="hover:text-green-400 transition">Sign in</a>
       </nav>
     </div>
   </header>
 
   <!-- Page Content -->
-  <main class="py-16">
+  <main class="py-16" id="home">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
     
     <!-- Left Content -->
@@ -327,7 +550,7 @@ The National Veterinary Quarantine Service Division in the Philippines has given
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Buyer Guide</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Agriculture/a>
+            <a class="text-gray-600 hover:text-gray-800">Agriculture</a>
           </li>
           <li>
             <a class="text-gray-600 hover:text-gray-800">Live Stock News</a>

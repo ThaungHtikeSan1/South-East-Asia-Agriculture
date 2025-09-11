@@ -7,17 +7,19 @@ const menu = document.getElementById("menu");
 
     // Journals
 function checkAuth(event) {
-    event.preventDefault(); 
-    const isSignedIn = false; 
+    event.preventDefault();
+    const isSignedIn = false; // change to true if logged in
 
     if (isSignedIn) {
-      
       window.location.href = "/journals.html";
     } else {
-      
-      alert("⚠️ You must sign in to continue!");
-      window.location.href = "./register.html";
+      // Show modern alert modal
+      document.getElementById("alertModal").classList.remove("hidden");
     }
+  }
+
+  function closeAlert() {
+    document.getElementById("alertModal").classList.add("hidden");
   }
 
 
